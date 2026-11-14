@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using Phase_5_Design_Patterns.Week_7_Structural_Patterns.Decorator_Pattern.Domain;
+
+namespace Phase_5_Design_Patterns.Week_7_Structural_Patterns.Decorator_Pattern.Decorators
+{
+    public class Borrowable : Decorator
+    {
+        protected readonly List<string> borrowers = new List<string>();
+
+        public Borrowable(LibraryItem libraryItem)
+            : base(libraryItem)
+        {
+        }
+
+        public void BorrowItem(string name)
+        {
+            borrowers.Add(name);
+            libraryItem.NumCopies--;
+        }
+
+        public void ReturnItem(string name)
+        {
+            borrowers.Remove(name);
+            libraryItem.NumCopies++;
+        }
+
+        public override void Display()
+        {
+            base.Display();
+            foreach (string borrower in borrowers)
+            {
+                Console.WriteLine(" borrower: " + borrower);
+            }
+        }
+    }
+}

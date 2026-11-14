@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Phase_3_Advanced.Week_4.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exercise\**" />
+    <Compile Remove="Week-6\**" />
+    <Compile Remove="Week-7\**" />
+    <EmbeddedResource Remove="Exercise\**" />
+    <EmbeddedResource Remove="Week-6\**" />
+    <EmbeddedResource Remove="Week-7\**" />
+    <None Remove="Exercise\**" />
+    <None Remove="Week-6\**" />
+    <None Remove="Week-7\**" />
+  </ItemGroup>
+
+</Project>

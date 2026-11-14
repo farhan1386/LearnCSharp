@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="ReadMe.md" />
+  </Folder>
+  <Project Path="Phase_1_Basics/Phase_1_Basics.csproj" />
+  <Project Path="Phase_2_Intermediate/Phase_2_Intermediate.csproj" />
+  <Project Path="Phase_3_Advanced/Phase_3_Advanced.csproj" />
+  <Project Path="Phase_4_SOLID_Principles/Phase_4_SOLID_Principles.csproj" />
+  <Project Path="Phase_5_Design_Patterns/Phase_5_Design_Patterns.csproj" />
+</Solution>
